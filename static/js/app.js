@@ -98,21 +98,21 @@ function optionChanged(value) {
             {
               domain: { x: [0, 1], y: [0, 1] },
               value: washes,
-              title: "Belly Button Washing Frequency",
+              title: "Test Subject: Belly Button Washing Frequency",
               type: "indicator",
               mode: "gauge+number+delta",
               delta: {reference: 9, 'increasing': {color: "red"}},
               gauge: {
                 axis: { range: [null, 9] },
-                bar: {color: "50acb3"}, 
+                bar: {color: "e6c9f5"}, 
                     steps: [
                         { range: [0,1], color: "f5f6f4" },
                         { range: [1,2], color: "ecf5e4" },
-                        { range: [2,3], color: "e8f5dc" },
-                        { range: [3,4], color: "e2f5d0" },
-                        { range: [4,5], color: "cdf2aa" },
-                        { range: [5,6], color: "9fd46e" },
-                        { range: [6,7], color: "88c94b" },
+                        { range: [2,3], color: "d4f2b8" },
+                        { range: [3,4], color: "c0f291" },
+                        { range: [4,5], color: "a7e36f" },
+                        { range: [5,6], color: "83c744" },
+                        { range: [6,7], color: "4cab2c" },
                         { range: [7,8], color: "27b83f" },
                         { range: [8,9], color: "108f3c" },
                         ]},
@@ -120,7 +120,7 @@ function optionChanged(value) {
           ];
 
           var gauge_layout = { 
-              width: 600, height: 500, margin: { t: 20, b: 40, l:140, r:140 } 
+              width: 600, height: 500, margin: { t: 20, b: 40 } 
             };
 
           Plotly.newPlot('gauge', gauge_trace, gauge_layout);
