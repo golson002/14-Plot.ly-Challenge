@@ -118,14 +118,12 @@ function optionChanged(value) {
                         ]},
             }
           ];
-          
-          var gauge_data = [gauge_trace];
 
           var gauge_layout = { 
               width: 600, height: 500, margin: { t: 20, b: 40, l:140, r:140 } 
             };
 
-          Plotly.newPlot('gauge', gauge_data, gauge_layout);
+          Plotly.newPlot('gauge', gauge_trace, gauge_layout);
     
     });
 }
